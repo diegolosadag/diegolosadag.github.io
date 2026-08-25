@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="gl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Matemáticas | IES Río Cabe</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f7fb;
+            color: #1f2937;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #172554;
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 19px;
+            opacity: 0.9;
+        }
+
+        nav {
+            background: white;
+            padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a {
+            color: #172554;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #2563eb;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .intro h2 {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .courses {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .course {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        .course h3 {
+            font-size: 25px;
+            margin-bottom: 20px;
+            color: #172554;
+        }
+
+        .topic {
+            display: block;
+            padding: 14px;
+            margin: 10px 0;
+            background: #f1f5f9;
+            border-radius: 10px;
+            text-decoration: none;
+            color: #1f2937;
+            transition: 0.2s;
+        }
+
+        .topic:hover {
+            background: #dbeafe;
+            transform: translateX(4px);
+        }
+
+        .emoji {
+            margin-right: 8px;
+        }
+
+        footer {
+            margin-top: 60px;
+            background: #172554;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>📐 Matemáticas</h1>
+    <p>Apuntes, exercicios e recursos para o instituto</p>
+</header>
+
+<nav>
+    <a href="#eso">3º ESO</a>
+    <a href="#bach">1º Bacharelato</a>
+</nav>
+
+<main class="container">
+
+    <section class="intro">
+        <h2>Benvidos!</h2>
+        <p>
+            Nesta web atoparás os apuntes, exercicios,
+            vídeos e actividades de Matemáticas.
+        </p>
+    </section>
+
+    <section id="eso">
+
+        <div class="course">
+
+            <h3>📚 3º ESO</h3>
+
+            <a class="topic" href="#">
+                <span class="emoji">🔢</span>
+                Fraccións e decimais
+            </a>
+
+            <a class="topic" href="#">
+                <span class="emoji">📏</span>
+                Proporcionalidade
+            </a>
+
+            <a class="topic" href="#">
+                <span class="emoji">✏️</span>
+                Álxebra
+            </a>
+
+            <a class="topic" href="#">
+                <span class="emoji">🧮</span>
+                Sistemas de ecuacións
+            </a>
+
+            <a class="topic" href="#">
+                <span class="emoji">📐</span>
+                Xeometría
+            </a>
+
+            <a class="topic" href="#">
+                <span class="emoji">📊</span>
+                Estatística
+            </a>
+
+            <a class="topic" href="#">
+                <span class="emoji">🎲</span>
+                Probabilidade
+            </a>
+
+        </div>
+
+    </section>
+
+    <br><br>
+
+    <section id="bach">
+
+        <div class="course">
+
+            <h3>🎓 1º Bacharelato</h3>
+
+            <a class="topic" href="#">
+                <span class="emoji">📈</span>
+                Funcións
+            </a>
+
+            <a class="topic" href="#">
+                <span class="emoji">∞</span>
+                Límites
+            </a>
+
+            <a class="topic" href="#">
+                <span class="emoji">📐</span>
+                Derivadas
+            </a>
+
+            <a class="topic" href="#">
+                <span class="emoji">📊</span>
+                Estatística
+            </a>
+
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>Matemáticas · IES Río Cabe</p>
+</footer>
+
+</body>
+</html>
