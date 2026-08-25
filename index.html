@@ -113,6 +113,10 @@
             color: #2563eb;
         }
 
+        nav a.active {
+            color: #2563eb;
+        }
+
 
         /* =========================
            CONTIDO
@@ -128,40 +132,15 @@
 
 
         /* =========================
-           INTRODUCIÓN
-        ========================= */
-
-        .intro {
-            text-align: center;
-
-            margin-bottom: 55px;
-        }
-
-        .intro h2 {
-            font-size: 32px;
-
-            color: #172554;
-
-            margin-bottom: 8px;
-        }
-
-        .intro p {
-            color: #64748b;
-
-            font-size: 17px;
-        }
-
-
-        /* =========================
-           TÍTULOS DE SECCIÓN
+           TÍTULOS
         ========================= */
 
         .section-title {
-            font-size: 26px;
+            font-size: 28px;
 
             color: #172554;
 
-            margin: 45px 0 22px;
+            margin-bottom: 25px;
 
             padding-bottom: 10px;
 
@@ -170,27 +149,28 @@
 
 
         /* =========================
-           TARXETAS DOS CURSOS
+           RECURSOS DESTACADOS
         ========================= */
 
-        .courses {
+        .resources {
             display: grid;
 
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns:
+                repeat(3, 1fr);
 
             gap: 20px;
+
+            margin-bottom: 65px;
         }
 
-        .course {
-            display: block;
-
+        .resource {
             background: white;
 
             border: 1px solid #e5e7eb;
 
             border-radius: 14px;
 
-            padding: 26px 28px;
+            padding: 25px;
 
             text-decoration: none;
 
@@ -205,7 +185,7 @@
                 border-color 0.2s ease;
         }
 
-        .course:hover {
+        .resource:hover {
             transform: translateY(-4px);
 
             border-color: #bfdbfe;
@@ -214,33 +194,71 @@
                 0 10px 25px rgba(0, 0, 0, 0.09);
         }
 
-        .course h3 {
+        .resource-icon {
+            font-size: 30px;
+
+            margin-bottom: 12px;
+        }
+
+        .resource h3 {
             color: #172554;
 
-            font-size: 24px;
+            font-size: 20px;
 
-            margin-bottom: 5px;
+            margin-bottom: 6px;
         }
 
-        .course p {
+        .resource p {
             color: #64748b;
-
-            font-size: 15px;
-        }
-
-        .arrow {
-            margin-top: 16px;
-
-            color: #2563eb;
-
-            font-weight: 600;
 
             font-size: 14px;
         }
 
 
         /* =========================
-           PÉ DA PÁXINA
+           INFORMACIÓN
+        ========================= */
+
+        .information {
+            background: white;
+
+            border: 1px solid #e5e7eb;
+
+            border-radius: 14px;
+
+            padding: 30px;
+
+            box-shadow:
+                0 3px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        .information-item {
+            padding: 15px 0;
+
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .information-item:last-child {
+            border-bottom: none;
+        }
+
+        .information-item h3 {
+            color: #172554;
+
+            font-size: 18px;
+
+            margin-bottom: 5px;
+        }
+
+        .information-item p {
+            color: #64748b;
+
+            font-size: 15px;
+        }
+
+
+        /* =========================
+           PÉ
         ========================= */
 
         footer {
@@ -262,7 +280,7 @@
            MÓBIL
         ========================= */
 
-        @media (max-width: 700px) {
+        @media (max-width: 750px) {
 
             .header-content {
                 gap: 15px;
@@ -285,16 +303,12 @@
                 font-size: 14px;
             }
 
-            .courses {
+            .resources {
                 grid-template-columns: 1fr;
             }
 
             .container {
                 margin-top: 40px;
-            }
-
-            .intro h2 {
-                font-size: 28px;
             }
 
         }
@@ -320,7 +334,9 @@
                 alt="IES Río Cabe"
             >
 
-            <h1>Matemáticas</h1>
+            <h1>
+                Matemáticas
+            </h1>
 
         </div>
 
@@ -328,14 +344,17 @@
 
 
     <!-- =========================
-         MENÚ SUPERIOR
+         MENÚ
     ========================= -->
 
     <nav>
 
         <div class="nav-content">
 
-            <a href="index.html">
+            <a
+                href="index.html"
+                class="active"
+            >
                 Inicio
             </a>
 
@@ -369,123 +388,82 @@
 
 
     <!-- =========================
-         CONTIDO PRINCIPAL
+         CONTIDO
     ========================= -->
 
     <main class="container">
 
 
-        <!-- INTRODUCIÓN -->
-
-        <div class="intro">
-
-            <h2>Índice</h2>
-
-            <p>
-                Escolle o teu curso para acceder aos materiais.
-            </p>
-
-        </div>
-
-
         <!-- =========================
-             ESO
+             RECURSOS DESTACADOS
         ========================= -->
 
-        <section id="eso">
+        <section>
 
             <h2 class="section-title">
-                ESO
+                Recursos destacados
             </h2>
 
 
-            <div class="courses">
+            <div class="resources">
 
-
-                <!-- 1º ESO -->
 
                 <a
-                    class="course"
-                    href="1eso.html"
+                    class="resource"
+                    href="#"
                 >
 
+                    <div class="resource-icon">
+                        📚
+                    </div>
+
                     <h3>
-                        1º ESO
+                        Apuntes
                     </h3>
 
                     <p>
-                        Matemáticas
+                        Consulta e descarga os apuntes das distintas unidades.
                     </p>
-
-                    <div class="arrow">
-                        Ver curso →
-                    </div>
 
                 </a>
 
 
-                <!-- 2º ESO -->
-
                 <a
-                    class="course"
-                    href="2eso.html"
+                    class="resource"
+                    href="#"
                 >
 
+                    <div class="resource-icon">
+                        🎥
+                    </div>
+
                     <h3>
-                        2º ESO
+                        Vídeos
                     </h3>
 
                     <p>
-                        Matemáticas
+                        Vídeos de explicación e práctica.
                     </p>
-
-                    <div class="arrow">
-                        Ver curso →
-                    </div>
 
                 </a>
 
 
-                <!-- 3º ESO -->
-
                 <a
-                    class="course"
-                    href="3eso.html"
+                    class="resource"
+                    href="#"
                 >
 
+                    <div class="resource-icon">
+                        🧮
+                    </div>
+
                     <h3>
-                        3º ESO
+                        GeoGebra
                     </h3>
 
                     <p>
-                        Matemáticas
+                        Actividades interactivas para practicar Matemáticas.
                     </p>
-
-                    <div class="arrow">
-                        Ver curso →
-                    </div>
-
-                </a>
-
-
-                <!-- 4º ESO -->
-
-                <a
-                    class="course"
-                    href="4eso.html"
-                >
-
-                    <h3>
-                        4º ESO
-                    </h3>
-
-                    <p>
-                        Matemáticas
-                    </p>
-
-                    <div class="arrow">
-                        Ver curso →
-                    </div>
 
                 </a>
 
@@ -496,61 +474,43 @@
 
 
         <!-- =========================
-             BACHARELATO
+             INFORMACIÓN
         ========================= -->
 
-        <section id="bacharelato">
+        <section>
 
             <h2 class="section-title">
-                Bacharelato
+                Información
             </h2>
 
 
-            <div class="courses">
+            <div class="information">
 
 
-                <!-- 1º BACH -->
-
-                <a
-                    class="course"
-                    href="1bach.html"
-                >
+                <div class="information-item">
 
                     <h3>
-                        1º Bacharelato
+                        Próximamente
                     </h3>
 
                     <p>
-                        Matemáticas
+                        Aquí aparecerán avisos, datas importantes e novidades.
                     </p>
 
-                    <div class="arrow">
-                        Ver curso →
-                    </div>
-
-                </a>
+                </div>
 
 
-                <!-- 2º BACH -->
-
-                <a
-                    class="course"
-                    href="2bach.html"
-                >
+                <div class="information-item">
 
                     <h3>
-                        2º Bacharelato
+                        Exames
                     </h3>
 
                     <p>
-                        Matemáticas
+                        Información sobre próximos exames e probas.
                     </p>
 
-                    <div class="arrow">
-                        Ver curso →
-                    </div>
-
-                </a>
+                </div>
 
 
             </div>
